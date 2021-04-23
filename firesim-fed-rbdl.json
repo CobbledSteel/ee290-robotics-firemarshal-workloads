@@ -1,0 +1,20 @@
+{
+	"benchmark_name": "fed-rbdl-benchmark",
+	"common_simulation_outputs": [
+		"uartlog", "memory_stats*.csv", "TRACEFILE*"
+		
+	],
+	"post_run_hook"             : "gen-all-flamegraphs-fireperf.sh",
+	"common_simulation_inputs"  : ["fed-rbdl-benchmark-rbdl-bin-dwarf"],
+	
+	"workloads": [
+		{
+			"name": "fed-rbdl-benchmark-rbdl",
+			"bootbinary": "fed-rbdl-benchmark-rbdl-bin",
+			"rootfs": "fed-rbdl-benchmark-rbdl.img",
+			"outputs": [
+				"/root/rbdl_results.txt"
+			]
+		}
+	]
+}
