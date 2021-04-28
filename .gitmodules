@@ -1,0 +1,3 @@
+[submodule "fed-rbdl-benchmark/overlay/root/rbd-benchmarks"]
+	path = fed-rbdl-benchmark/overlay/root/rbd-benchmarks
+	url = https://github.com/joshuaminwookang/rbd-benchmarks.git
