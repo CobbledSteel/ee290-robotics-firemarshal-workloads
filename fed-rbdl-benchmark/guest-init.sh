@@ -19,17 +19,4 @@
 # build script will wait for you to interact with the booted image and shut
 # down before it continues (which might be useful when debugging a workload).
 
-echo "Installing rbd-benchmarks and building rbdl benchmark"
-cd ~ 
-git clone https://github.com/joshuaminwookang/rbd-benchmarks.git --branch riscv-build
-cd rbd-benchmarks/libs
-make rbdl
-
-echo "Downloading csv files"
-cd ..
-./setup.sh
-
-cd ./experiments/rbdl
-./compile_rbdl_time.sh
-
 poweroff
