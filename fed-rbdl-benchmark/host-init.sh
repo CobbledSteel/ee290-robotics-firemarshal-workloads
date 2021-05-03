@@ -7,4 +7,5 @@
 
 echo "building RBDL benchmark"
 cd ./overlay/root/rbd-benchmarks
+git submodule update 
 ./setup.sh

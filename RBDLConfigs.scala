@@ -41,3 +41,8 @@ class GemminiFP32DefaultBoomConfig extends Config(
 new gemmini.GemminiFP32DefaultConfig ++
 new boom.common.WithNLargeBooms(1) ++
 new chipyard.config.AbstractConfig)
+
+class GemminiFP64DefaultBoomConfig extends Config(
+new gemmini.GemminiFP64DefaultConfig ++
+new boom.common.WithNLargeBooms(1) ++
+new chipyard.config.AbstractConfig)
