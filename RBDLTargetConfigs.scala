@@ -49,6 +49,12 @@ class FireSimGemminiFP32DefaultBoomConfig extends Config(
   new WithFireSimConfigTweaks ++
   new chipyard.GemminiFP32DefaultBoomConfig)
 
+class FireSimGemminiFP32Default8BoomConfig extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.GemminiFP32Default8BoomConfig)
+
 class FireSimGemminiFP64DefaultBoomConfig extends Config(
   new WithDefaultFireSimBridges ++
   new WithDefaultMemModel ++
